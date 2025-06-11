@@ -61,27 +61,25 @@ h3 {
   font-size: clamp(1.4rem, 4cqi, 2.5rem);
 }
 
-/* @media (width>800px) {
-  .grid {
+@media screen and (width>800px){
+  .grid{
     grid-template-columns: repeat(2, 1fr);
   }
-  .article-container:first-child {
+  .article-container:first-child{
     grid-column: span 2;
   }
 }
 
-@media (width>1000px) {
-  .grid {
+@media screen and (width>1000px){
+  .grid{
     grid-template-columns: repeat(4, 1fr);
   }
-  .article-container:first-child {
+  .article-container:first-child{
     grid-column: span 4;
   }
-
-  .article-container:nth-child(2),
-  .article-container:nth-child(3) {
+  .article-container:nth-child(2), .article-container:nth-child(3){
     grid-column: span 2;
   }
-} */
+}
 
 
