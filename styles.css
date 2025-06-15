@@ -61,6 +61,25 @@ h3 {
   font-size: clamp(1.4rem, 4cqi, 2.5rem);
 }
 
+.article-container{
+  /* container-name: article;
+  container-type: inline-size; */
+  container: article / inline-size;
+}
+
+@container article (inline-size > 500px){
+  article{
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@container article (inline-size > 800px){
+  article{
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
 @media screen and (width>800px){
   .grid{
     grid-template-columns: repeat(2, 1fr);
